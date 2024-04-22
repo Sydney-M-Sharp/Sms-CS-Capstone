@@ -10,8 +10,6 @@
 
 This project will create a virtual closet of sorts  where a user can  look up an item that they have in front of them  and match it with outfits that they enjoy that contain this article of clothing. Here’s how it works, the user will be able to upload a photo of an outfit that they've previously worn. Then they'll tag that outfit’s individual clothing articles. For example, they can tag the outfit with a description of the top, bottoms, shoes, and necklace. Later, when the user looks in their closet and finds a shirt that they love, rather than trying to comb their memory for the last time they wore this shirt, they can search for that shirt in the database and the app will show all of the outfits tagged with that shirt.-
 
-[![LinkedIn][linkedin-url]
-https://miro.com/app/board/uXjVKSpbdfY=/?share_link_id=548829694334
 
 <!-- USER STORIES-->
 ## User Stories
@@ -76,4 +74,6 @@ Then the user will be taken back to the home page and “logged out”
 [linkedin-url]: https://linkedin.com/in/sydney-m-sharp/
 [linkedin-url]: https://linkedin.com/in/sydney-m-sharp/
 
-[wireFrame-url]:
+[wireFrame-url]:https://miro.com/app/board/uXjVKSpbdfY=/?moveToWidget=3458764586076634312&cot=14
+
+[erd-url]:https://dbdiagram.io/d/Sydney-Sharps-Capstone-ERD-65f208a3b1f3d4062cdccbfb
