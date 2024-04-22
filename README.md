@@ -1,5 +1,6 @@
 # My Dream closet (Client Side Capstone Project for NSS)
 
+[![LinkedIn][linkedin-shield]][linkedin-url]
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
