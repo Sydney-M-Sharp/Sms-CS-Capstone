@@ -1,0 +1,39 @@
+.navbar {
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: #fac70e;
+    margin: 0;
+    width: 100%;
+    padding: 0.5rem;
+}
+
+.navbar-item {
+    flex-basis: 20%;
+    list-style-type: none;
+    text-align: center;
+    /* background-color: #feea95; */
+    margin: 1.2rem;
+    border-radius: 1rem;
+    height: 34px;
+    width: 111px;
+    padding-top: 0.5rem;
+}
+
+/* .navbar-link {
+    text-decoration: none;
+    font-family: "Quicksand", sans-serif;
+    letter-spacing: 1px;
+} */
+
+.navbar-logout {
+    margin-left: auto;
+}
+
+/* .navbar-link:hover {
+    color: violet;
+} */
+
+a{color: white;
+
+
+}
