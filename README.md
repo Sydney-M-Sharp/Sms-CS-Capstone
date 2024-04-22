@@ -1,7 +1,5 @@
 # My Dream closet (Client Side Capstone Project for NSS)
 
-[![LinkedIn][linkedin-shield]][linkedin-url]
-
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
@@ -68,5 +66,5 @@ When the user selects the logout button in the navbar
 Then the user will be taken back to the home page and “logged out”
 
 <!-- MARKDOWN LINKS & IMAGES -->
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/sydney-m-sharp/# Sms-CS-Capstone
+
+[linkedin-url]: https://linkedin.com/in/sydney-m-sharp/
