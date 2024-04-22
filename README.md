@@ -1,6 +1,6 @@
 # My Dream closet (Client Side Capstone Project for NSS)
 
-<a>[![LinkedIn][linkedin-shield]][linkedin-url]</a>
+[![LinkedIn][linkedin-shield]][linkedin-url]
 
 
 <!-- ABOUT THE PROJECT -->
@@ -9,6 +9,9 @@
 -As someone with ADHD I have several extra fun quirks, one of them being a lack of object permanence. This is especially difficult when it comes to clothes in my drawers and closet. If all of my clothes are not laid out in front of me I forget what I have hidden away.  I love fashion and enjoy getting dressed up but my decisiveness is cut short(haha) because I can't remember what outfits I enjoy wearing based on the items I can’t see. 
 
 This project will create a virtual closet of sorts  where a user can  look up an item that they have in front of them  and match it with outfits that they enjoy that contain this article of clothing. Here’s how it works, the user will be able to upload a photo of an outfit that they've previously worn. Then they'll tag that outfit’s individual clothing articles. For example, they can tag the outfit with a description of the top, bottoms, shoes, and necklace. Later, when the user looks in their closet and finds a shirt that they love, rather than trying to comb their memory for the last time they wore this shirt, they can search for that shirt in the database and the app will show all of the outfits tagged with that shirt.-
+
+[![LinkedIn][linkedin-url]
+https://miro.com/app/board/uXjVKSpbdfY=/?share_link_id=548829694334
 
 <!-- USER STORIES-->
 ## User Stories
@@ -67,6 +70,9 @@ Given the user wants to logout
 When the user selects the logout button in the navbar
 Then the user will be taken back to the home page and “logged out”
 
+
 <!-- MARKDOWN LINKS & IMAGES -->
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/sydney-m-sharp/# Sms-CS-Capstone
+[linkedin-url]: https://linkedin.com/in/sydney-m-sharp/
+
+[wireFrame-url]:
