@@ -67,5 +67,5 @@ When the user selects the logout button in the navbar
 Then the user will be taken back to the home page and “logged out”
 
 <!-- MARKDOWN LINKS & IMAGES -->
-
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/sydney-m-sharp/
