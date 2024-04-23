@@ -1,22 +1,25 @@
-.top-of-page{
-display: flex;
-
-}
-.middle-of-page{
+.top-of-page {
     display: flex;
-    
+
 }
-.bottom-of-page{
+
+.middle-of-page {
     display: flex;
-    
-}
-
-.left{
- width: 50%;
-
- justify-content: center;
 
 }
-.right{
+
+.bottom-of-page {
+    display: flex;
+
+}
+
+.left {
     width: 50%;
-   }
+
+    justify-content: center;
+
+}
+
+.right {
+    width: 50%;
+}
