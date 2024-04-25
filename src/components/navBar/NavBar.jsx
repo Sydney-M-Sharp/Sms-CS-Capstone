@@ -8,16 +8,16 @@ export const NavBar = () => {
 
     return <ul className="navbar">
         <li className="navbar-item">
-            <Link to='/home'>Home</Link>
+            <Link to='/'>Home</Link>
         </li>
         <li className="navbar-item">
-            <Link to='/myCloset'>My Closet</Link>
+            <Link to='/my-closet'>My Closet</Link>
         </li>
         <li className="navbar-item">
             <Link to='/upload'>Upload</Link>
         </li>
         <li className="navbar-item">
-            <Link to='/myProfile'>My Profile</Link>
+            <Link to='/my-profile'>My Profile</Link>
         </li>
 
 

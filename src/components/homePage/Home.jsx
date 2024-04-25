@@ -1,6 +1,15 @@
 import "./home.css"
-export const Home = () => {
+import { useNavigate } from "react-router-dom"
 
+export const Home = () => {
+const navigate = useNavigate()
+
+const moveToSignIn =() =>{
+    navigate("sign-in")
+}
+const moveToSignUp =() =>{
+    navigate("sign-up")
+}
 
     return (
     <>
@@ -12,11 +21,13 @@ export const Home = () => {
                 Don't worry! Dream Closet has your back.
             </h3>
                 <div className="signIn-button">
-                <button className="signIn-button"> Sign In</button>
+                <button className="signIn-button" onClick={moveToSignIn}> Sign In</button>
                 {/* This section will navigate to the sign in section */}
                 </div>
                 </div>
-                <div className="Img-section">Place Holder for image</div>
+                <div className="right">
+                <img className="mainLogo" src="src/components/logos/MainLogo.png"/> 
+                </div>
         </section>
 
         <section className="middle-of-page">
@@ -34,8 +45,10 @@ export const Home = () => {
         </section>
         
         <section className="bottom-of-page">
-        <button className="signUp-button"> Sign Up</button>
-            {/* This section will navigate to the sign UP section */}
+        <h3>Want to start your own closet? Get started by signing up below!</h3>
+        <div className="signIn-button">
+        <button className="signUp-button" onClick={moveToSignUp}> Sign Up</button>
+        </div>
 
 
         </section>

@@ -1,11 +1,11 @@
 .top-of-page {
     display: flex;
-
+    
 }
 
 .middle-of-page {
     display: flex;
-
+    justify-content: space-evenly;
 }
 
 .bottom-of-page {
@@ -15,11 +15,16 @@
 
 .left {
     width: 50%;
-
-    justify-content: center;
+    margin-left: 4rem;
 
 }
 
 .right {
     width: 50%;
+    margin: 4rem;
 }
+.mainLogo{
+    height: 337px; 
+    width: 354px;
+   
+    }
