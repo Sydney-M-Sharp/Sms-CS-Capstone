@@ -1,22 +1,30 @@
-.top-of-page{
-display: flex;
-
-}
-.middle-of-page{
-    display: flex;
-    
-}
-.bottom-of-page{
+.top-of-page {
     display: flex;
     
 }
 
-.left{
- width: 50%;
+.middle-of-page {
+    display: flex;
+    justify-content: space-evenly;
+}
 
- justify-content: center;
+.bottom-of-page {
+    display: flex;
 
 }
-.right{
+
+.left {
     width: 50%;
-   }
+    margin-left: 4rem;
+
+}
+
+.right {
+    width: 50%;
+    margin: 4rem;
+}
+.mainLogo{
+    height: 337px; 
+    width: 354px;
+   
+    }
