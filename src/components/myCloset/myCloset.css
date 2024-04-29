@@ -1,0 +1,21 @@
+.header-of-page {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.post-photo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.post-photo img {
+    width: calc(33.33% - 20px);
+    /* Adjust width based on the number of photos per row */
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    /* Border style */
+    box-sizing: border-box;
+    /* Include border in element's dimensions */
+    /* clip-path: polygon(0 10%, 100% 10%, 100% 90%, 0 90%); */
+}

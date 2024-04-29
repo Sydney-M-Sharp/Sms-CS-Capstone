@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import './App.css'
 import { Routes, Route } from "react-router-dom"
 import { NavBar } from './components/navBar/NavBar.jsx'
@@ -15,18 +15,26 @@ import { EditOutfit } from './components/editOutfit/EditOutfit.jsx'
 
 
 export const App = () => {
+  const [currentUser, setCurrentUser] = useState({})
+
+  useEffect(() => {
+      const localClosetUser = localStorage.getItem("user")
+      const UserObject = JSON.parse(localClosetUser)
+
+      setCurrentUser(UserObject)
+  }, [])
 
   return (<>
-    <NavBar />
+    <NavBar setCurrentUser={setCurrentUser}/>
     <Routes>
     
-      <Route path="my-closet" element={<MyCloset />} />
-      <Route path="upload" element={<Upload />} />
+      <Route path="my-closet" element={<MyCloset currentUser={currentUser}/>} />
+      <Route path="upload" element={<Upload currentUser={currentUser} />} />
       <Route path="my-outfit" element={<MyOutfit />} />
       <Route path="add-clothing-type" element={<AddClothingType />} />
-      <Route path="my-profile" element={<MyProfile />} />
-      <Route path="edit-profile" element={ <EditProfile />} />
-      <Route path="sign-in" element={<SignIn />} />
+      <Route path="my-profile" element={<MyProfile currentUser={currentUser} />} />
+      <Route path="edit-profile" element={ <EditProfile currentUser={currentUser}  />} />
+      <Route path="sign-in" element={<SignIn setCurrentUser={setCurrentUser}/>} />
       <Route path="sign-up" element={<SignUp />} />
       <Route path="edit-outfit" element={  <EditOutfit />} />
       < Route path="/" element={<Home />} />
