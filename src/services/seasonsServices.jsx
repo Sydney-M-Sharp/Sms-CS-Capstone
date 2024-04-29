@@ -1,0 +1,3 @@
+export const getAllSeasons = () => {
+    return fetch("http://localhost:8088/seasons"). then((res) => res.json())
+}
