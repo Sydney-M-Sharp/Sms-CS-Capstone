@@ -14,7 +14,7 @@ export const Upload = ({ currentUser }) => {
     useEffect(() => {
         getAllSeasons().then((data) => { setAllSeasons(data) })
 
-    }, [])
+    }, [currentUser])
 
     const savePost = () => {
         const newPost = {

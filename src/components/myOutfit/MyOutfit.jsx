@@ -1,14 +1,57 @@
 
-export const MyOutfit = () =>{
-return (
-<section className="header-of-page">
-                <h1>My Outfit</h1>
-                <div className="titles">
-                    <h3>Clothing Type</h3>
-                    <h3>Item Description</h3>
-                </div>
+import { useLocation, useNavigate } from 'react-router-dom';
+import { getSeasonById } from '../../services/seasonsServices.jsx';
+import { useEffect, useState } from 'react';
+import "./myOutfit.css"
+import { eraseFromDatabase } from '../../services/DeleteService.jsx';
 
-                {/* // check the id for the post clicked. Find the post and then look through the clothing types.If the id for the post and the post id from the clothing types =is the same then show all of them with the same id.  */}
-            </section>
-)
+
+export const MyOutfit = ({ currentUser }) => {
+    const location = useLocation();
+    const { item } = location.state;
+    let navigate = useNavigate()
+
+
+    const [postSeason, setPostSeason] = useState({})
+
+    useEffect(() => {
+        let seasonId = item.seasonsId
+
+        getSeasonById(seasonId).then(setPostSeason)
+        // .then((data) => { setPostSeason(data) })
+
+    }, [currentUser]);
+
+    const handleClick = (item) => {
+        navigate("/edit-outfit", { state: { item } })
+
+    }
+    const deleteClick = (item) => {
+        eraseFromDatabase(item).then(() =>{ 
+            navigate("/my-closet")
+        })
+        
+
+    }
+    
+    return (<>
+        <section className="header-of-page">
+            <h1>My Outfit</h1>
+        </section>
+
+        <div className="titles">
+
+            <img className="post-photo2" key={item.id} data={item.seasonsId} src={item.photo} alt={item.photo} />
+        </div>
+        <div className='season-name'>
+            <p className='season-name' key={postSeason.id}>Season: {postSeason.name}</p>
+
+        </div>
+
+        <div className='bottom-buttons'>
+            <button onClick={() => handleClick(item)}>Edit Outfit</button>
+            <button onClick={() => deleteClick(item)} >Delete Outfit</button>
+        </div>
+
+    </>)
 }

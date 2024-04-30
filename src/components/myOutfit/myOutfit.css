@@ -1,0 +1,39 @@
+.header-of-page {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* .post-photo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+} */
+
+.post-photo2 img {
+    width: calc(33.33% - 20px);
+    /* Adjust width based on the number of photos per row */
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    /* Border style */
+    box-sizing: border-box;
+    /* Include border in element's dimensions */
+    clip-path: polygon(0 10%, 100% 10%, 100% 90%, 0 90%);
+    
+}.post-photo2 {
+    width: 500px; /* Set a specific width */
+    height: auto; /* Allow the height to adjust proportionally based on the width */
+  }
+  .season-name {
+    font-size: 24px; /* Set the font size of the season name */
+    text-align: center; /* Center the season name horizontally */
+    margin-top: 20px; /* Add some top margin for spacing */
+}
+.bottom-buttons {
+    display: flex; /* Use flexbox to arrange the buttons */
+    justify-content: center; /* Center the buttons horizontally */
+    margin-top: 20px; /* Add some top margin for spacing */
+}
+
+.bottom-buttons button {
+    margin: 0 10px; /* Add some horizontal margin between the buttons */
+}

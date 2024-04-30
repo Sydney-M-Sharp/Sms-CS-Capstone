@@ -10,16 +10,11 @@ export const MyProfile = ({ currentUser }) => {
     useEffect(() => {
         getPostByUserId({ currentUser }).then((data) => { setUserPosts(data) })
 
-
     }, [currentUser]);
 
     useEffect(() => {
         getUserById({ currentUser }).then((data) => {
-
-            if (data.length === 1) { 
-                const user = data[0]
-                setUserObject(user)
-            }
+            setUserObject(data)
         })
     }, [currentUser]);
 
@@ -32,12 +27,12 @@ export const MyProfile = ({ currentUser }) => {
             <h3>Profile Info</h3>
             <div className="userName">
                 <div>Name: </div>
-            <ul>{userObject.name}</ul>
+                <ul>{userObject.name}</ul>
             </div>
 
             <div className="userEmail">
-            <div>Email: </div>
-            <ul>{userObject.email}</ul>
+                <div>Email: </div>
+                <ul>{userObject.email}</ul>
             </div>
 
         </div>
