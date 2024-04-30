@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom"
 
 import { createUser, getUserByEmail } from "../../services/userService"
 
-export const SignUp = () => {
+export const SignUp = ({ setCurrentUser }) => {
     const [user, setUser] = useState({
         name: "",
         email: "",
@@ -21,7 +21,7 @@ export const SignUp = () => {
                         id: createdUser.id,
                     })
                 )
-
+                setCurrentUser(createdUser)
                 navigate("/")
             }
         })

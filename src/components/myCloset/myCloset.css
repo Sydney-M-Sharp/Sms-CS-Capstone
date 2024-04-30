@@ -17,5 +17,6 @@
     /* Border style */
     box-sizing: border-box;
     /* Include border in element's dimensions */
-    /* clip-path: polygon(0 10%, 100% 10%, 100% 90%, 0 90%); */
+    clip-path: polygon(0 10%, 100% 10%, 100% 90%, 0 90%);
 }
+

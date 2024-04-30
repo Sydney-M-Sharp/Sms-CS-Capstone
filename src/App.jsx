@@ -10,7 +10,7 @@ import { MyOutfit } from './components/myOutfit/MyOutfit.jsx'
 import { MyProfile } from './components/profile/Profile.jsx'
 import { SignIn } from './components/signIn/SignIn.jsx'
 import { SignUp } from './components/signUp/SignUp.jsx'
-import { EditProfile } from './components/editProfile/EditProfile.jsx'
+import { EditProfile } from './components/AfterMVP/editProfile/EditProfile.jsx'
 import { EditOutfit } from './components/editOutfit/EditOutfit.jsx'
 
 
@@ -20,8 +20,8 @@ export const App = () => {
   useEffect(() => {
       const localClosetUser = localStorage.getItem("user")
       const UserObject = JSON.parse(localClosetUser)
-
       setCurrentUser(UserObject)
+    
   }, [])
 
   return (<>
@@ -30,13 +30,13 @@ export const App = () => {
     
       <Route path="my-closet" element={<MyCloset currentUser={currentUser}/>} />
       <Route path="upload" element={<Upload currentUser={currentUser} />} />
-      <Route path="my-outfit" element={<MyOutfit />} />
-      <Route path="add-clothing-type" element={<AddClothingType />} />
+      <Route path="my-outfit" element={<MyOutfit currentUser={currentUser}/>} />
+      {/* <Route path="add-clothing-type" element={<AddClothingType />} /> */}
       <Route path="my-profile" element={<MyProfile currentUser={currentUser} />} />
       <Route path="edit-profile" element={ <EditProfile currentUser={currentUser}  />} />
       <Route path="sign-in" element={<SignIn setCurrentUser={setCurrentUser}/>} />
-      <Route path="sign-up" element={<SignUp />} />
-      <Route path="edit-outfit" element={  <EditOutfit />} />
+      <Route path="sign-up" element={<SignUp setCurrentUser={setCurrentUser}/>} />
+      <Route path="edit-outfit" element={  <EditOutfit currentUser={currentUser}/>} />
       < Route path="/" element={<Home />} />
 
     </Routes>
