@@ -12,10 +12,11 @@ export const MyCloset = ({ currentUser }) => {
     let navigate = useNavigate()
 
     useEffect(() => {
-        getPostByUserId({ currentUser }).then((data) => { setUserPosts(data) })
+        if ("id" in currentUser){ // this is checking to see if the object current user has the id key in it.
+            getPostByUserId({ currentUser }).then((data) => { setUserPosts(data) })
+        }
 
-
-    }, []);
+    }, [currentUser]);
 
   
     const handleClick =(item) =>{
@@ -28,9 +29,8 @@ export const MyCloset = ({ currentUser }) => {
             <section className="header-of-page">
                 <h1>My Closet</h1>
 
+{userPosts.length ? 
                 <div className="post-photo">
-
-
                     {userPosts.map((item) => {
                         let picture = item.photo;
                         return (
@@ -38,9 +38,15 @@ export const MyCloset = ({ currentUser }) => {
                             onClick={() => handleClick(item)}/>
                         );
                     })}
-
                 </div>
+:
+<section className="Upload-photo">
+    
+<div>Oops looks like your closet is empty! Let's have you upload a photo and get started!</div>
+<button onClick={()=>navigate("/upload")}> Upload </button>
 
+</section>
+}
             </section>
 
         </>

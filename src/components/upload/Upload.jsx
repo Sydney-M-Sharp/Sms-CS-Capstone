@@ -2,7 +2,7 @@ import { useEffect, useState } from "react"
 import { getAllSeasons } from "../../services/seasonsServices.jsx"
 import { useNavigate } from "react-router-dom"
 import { savePostToDatabase } from "../../services/PostService.jsx"
-
+import "./upload.css"
 
 export const Upload = ({ currentUser }) => {
     const [photoURL, setPhotoURL] = useState("")
@@ -35,7 +35,7 @@ export const Upload = ({ currentUser }) => {
             <section className="header-of-page">
                 <h1>Upload Photo</h1>
                 </section>
-                <div>
+                <div className="middle">
                     {/* <form onSubmit={savePhoto}> */}
                         <input
                             type="url"
@@ -46,7 +46,7 @@ export const Upload = ({ currentUser }) => {
                             required
                             autoFocus
                         />
-                        <label htmlFor="seasons">Choose a Season for this fit: </label>
+                        <label htmlFor="seasons"> Choose a Season for this fit: </label>
                         <select name="seasons" id="seasons" onChange={(evt) => setSelectedSeason(evt.target.value)}>
                             <option defaultValue>Choose a Season</option>
 
@@ -58,10 +58,11 @@ export const Upload = ({ currentUser }) => {
                             })}
                         </select>
 
-                        <button type="submit" onClick={savePost} >Submit Photo</button>
+                       
 
                     {/* </form> */}
                 </div>
+                <button className="button-photo" type="submit" onClick={savePost} >Submit Photo</button>
         </>
         )
     }

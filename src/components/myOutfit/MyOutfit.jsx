@@ -39,7 +39,7 @@ export const MyOutfit = ({ currentUser }) => {
             <h1>My Outfit</h1>
         </section>
 
-        <div className="titles">
+        <div className="photo-Section">
 
             <img className="post-photo2" key={item.id} data={item.seasonsId} src={item.photo} alt={item.photo} />
         </div>
@@ -50,7 +50,7 @@ export const MyOutfit = ({ currentUser }) => {
 
         <div className='bottom-buttons'>
             <button onClick={() => handleClick(item)}>Edit Outfit</button>
-            <button onClick={() => deleteClick(item)} >Delete Outfit</button>
+            <button className="delete-button" onClick={() => deleteClick(item)} >Delete Outfit</button>
         </div>
 
     </>)

@@ -3,6 +3,7 @@ import React, { useState } from "react"
 import { Link } from "react-router-dom"
 import { useNavigate } from "react-router-dom"
 import { getUserByEmail } from "../../services/userService.js"
+import "./signIn.css"
 
 
 export const SignIn = ({setCurrentUser}) => {
@@ -24,7 +25,7 @@ export const SignIn = ({setCurrentUser}) => {
                 )
                 setCurrentUser(user)
 
-                navigate("/")// @todo later change this to my-closet
+                navigate("/my-closet")
             } else {
                 window.alert("Invalid login")
             }
@@ -34,11 +35,9 @@ export const SignIn = ({setCurrentUser}) => {
     return (<>
         <section className="header-of-page">
             <h1>Sign In</h1>
-            <div className="titles">
-
-            </div>
         </section>
-        <section>
+        
+        <section className="full-page">
             <form className="form-login"
             onSubmit={handleLogin}
             >
@@ -55,6 +54,8 @@ export const SignIn = ({setCurrentUser}) => {
                         />
                     </div>
                 </fieldset>
+
+
                 <fieldset>
                     <div className="form-group">
                         <button className="login-btn btn-info" type="submit">
@@ -62,11 +63,14 @@ export const SignIn = ({setCurrentUser}) => {
                         </button>
                     </div>
                 </fieldset>
+                
             </form>
+            <div className="bottom-half">
 
-
-            <Link className="link" to="/sign-up">Not a member yet?</Link>
-            {/* @todo its there you just cant see it^ work on css later */}
+ <img className="hanger" src="src/components/logos/hanger.png" alt="src/components/logos/hanger.png" />
+            <Link className="link" to="/sign-up">Not a member yet? Click here!</Link>
+            
+            </div>
         </section>
 
     </>

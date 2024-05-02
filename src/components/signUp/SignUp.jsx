@@ -1,7 +1,8 @@
 import { useState } from "react"
 import { useNavigate } from "react-router-dom"
-
 import { createUser, getUserByEmail } from "../../services/userService"
+import "./signUp.css"
+
 
 export const SignUp = ({ setCurrentUser }) => {
     const [user, setUser] = useState({
@@ -14,7 +15,7 @@ export const SignUp = ({ setCurrentUser }) => {
     const registerNewUser = () => {
 
         createUser(user).then((createdUser) => {
-            if (createdUser.hasOwnProperty("id")) {// hasOwnProperty("id")) means has an id in the data bade like it shoudl have made when posted. 
+            if (createdUser.hasOwnProperty("id")) {// hasOwnProperty("id")) means has an id in the data bade like it should have made when posted. 
                 localStorage.setItem(
                     "user",
                     JSON.stringify({
@@ -46,42 +47,43 @@ export const SignUp = ({ setCurrentUser }) => {
         setUser(copy)
     }
 
-    return (<main className="auth-container">
-        <form className="auth-form" onSubmit={handleRegister}>
-            <h1 className="header">Learning Moments</h1>
-            <h2>Please Register</h2>
-            <fieldset className="auth-fieldset">
-                <div>
-                    <input
-                        onChange={updateUser}
-                        type="text"
-                        id="name"
-                        className="auth-form-input"
-                        placeholder="Enter your name"
-                        required
-                        autoFocus
-                    />
-                </div>
-            </fieldset>
-            <fieldset className="auth-fieldset">
-                <div>
-                    <input
-                        onChange={updateUser}
-                        type="email"
-                        id="email"
-                        className="auth-form-input"
-                        placeholder="Email address"
-                        required
-                    />
-                </div>
-            </fieldset>
+    return (<>
+        <section className=" header-of-page">
+            <h1 className="header">Sign Up</h1>
+        </section>
 
-            <fieldset className="auth-fieldset">
-                <div>
-                    <button type="submit">Sign Up</button>
-                </div>
-            </fieldset>
-        </form>
-    </main>
-    )
+        <section className="full-page">
+            <form className="auth-form" onSubmit={handleRegister}>
+                <fieldset >
+                    <div className="form-group">
+                        <input
+                            onChange={updateUser}
+                            type="text"
+                            id="name"
+                            className="form-control"
+                            placeholder="Enter your name"
+                            required
+                            autoFocus
+                        />
+                    
+                        <input
+                            onChange={updateUser}
+                            type="email"
+                            id="email"
+                            className="form-control"
+                            placeholder="Email address"
+                            required
+                        />
+                    </div>
+                </fieldset>
+
+                <fieldset className="auth-fieldset">
+                    <div>
+                        <button className="sign-btn btn-info" type="submit">Sign Up</button>
+                    </div>
+                </fieldset>
+
+            </form>
+        </section>
+    </>)
 }

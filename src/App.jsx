@@ -4,7 +4,6 @@ import { Routes, Route } from "react-router-dom"
 import { NavBar } from './components/navBar/NavBar.jsx'
 import { Home } from './components/homePage/Home.jsx'
 import { MyCloset } from './components/myCloset/MyCloset.jsx'
-import { AddClothingType } from './components/addClothingType/AddClothingType.jsx'
 import { Upload } from './components/upload/Upload.jsx'
 import { MyOutfit } from './components/myOutfit/MyOutfit.jsx'
 import { MyProfile } from './components/profile/Profile.jsx'
@@ -20,6 +19,7 @@ export const App = () => {
   useEffect(() => {
       const localClosetUser = localStorage.getItem("user")
       const UserObject = JSON.parse(localClosetUser)
+      
       setCurrentUser(UserObject)
     
   }, [])
@@ -37,7 +37,7 @@ export const App = () => {
       <Route path="sign-in" element={<SignIn setCurrentUser={setCurrentUser}/>} />
       <Route path="sign-up" element={<SignUp setCurrentUser={setCurrentUser}/>} />
       <Route path="edit-outfit" element={  <EditOutfit currentUser={currentUser}/>} />
-      < Route path="/" element={<Home />} />
+      < Route path="/" element={<Home currentUser={currentUser}/>} />
 
     </Routes>
   </>

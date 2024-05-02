@@ -9,14 +9,38 @@
     justify-content: space-between;
 }
 
-.post-photo img {
-    width: calc(33.33% - 20px);
-    /* Adjust width based on the number of photos per row */
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    /* Border style */
-    box-sizing: border-box;
-    /* Include border in element's dimensions */
-    clip-path: polygon(0 10%, 100% 10%, 100% 90%, 0 90%);
+
+
+    
+.Upload-photo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Make the section cover the entire viewport height */
 }
 
+.Upload-photo > div {
+    font-size: 24px; /* Set the font size of the text */
+    text-align: center; /* Center the text horizontally */
+    margin-bottom: 70px; /* Add some bottom margin for spacing */
+}
+
+.Upload-photo button {
+    font-size: 18px; /* Set the font size of the button */
+}
+
+.post-photo img {
+    width: calc(33.33% - 20px);
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    clip-path: polygon(0 10%, 100% 10%, 100% 90%, 0 90%);
+
+}
+
+
+.post-photo img:hover {
+    transform: scale(1.01); /* Apply scaling only to the hovered image */
+    cursor: pointer;
+}

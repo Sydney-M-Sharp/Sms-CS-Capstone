@@ -1,0 +1,49 @@
+.userInfo,
+.userClosetInfo {
+    text-align: center;
+    margin: auto;
+    max-width: 600px;
+}
+
+.userInfo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 47px auto;
+}
+
+.userInfo .title {
+    font-weight: bold;
+}
+
+.userClosetInfo {
+    background-color: #fcde7003;
+    padding: 20px;
+    margin: -308px auto;
+    width: 200px;
+    margin-left: 37rem;
+}
+
+
+.userInfo {
+    background-color: rgba(191, 191, 191, 0.765);
+    /* Light gray background color with 50% opacity */
+    padding: 20px;
+}
+
+.closet-img {
+
+    display: block;
+    /* Make the image a block element */
+    margin: 0 auto;
+    /* Set left and right margins to auto to center horizontally */
+    border-radius: 10px;
+
+}
+
+.closet-amount {
+    color: antiquewhite;
+}
+.mirror{
+    
+}
