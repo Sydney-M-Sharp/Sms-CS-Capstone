@@ -1,8 +1,9 @@
-.userInfo,
-.userClosetInfo {
-    text-align: center;
+/* mirror */
+.userInfo {
+    text-align: left;
     margin: auto;
-    max-width: 600px;
+    max-width: 239px;
+
 }
 
 .userInfo {
@@ -16,34 +17,69 @@
     font-weight: bold;
 }
 
-.userClosetInfo {
-    background-color: #fcde7003;
-    padding: 20px;
-    margin: -308px auto;
-    width: 200px;
-    margin-left: 37rem;
-}
-
-
 .userInfo {
-    background-color: rgba(191, 191, 191, 0.765);
+    background-color: rgba(191, 191, 191, 0.408);
     /* Light gray background color with 50% opacity */
-    padding: 20px;
+    flex-direction: column;
+    margin-top: -19rem;
+    margin-bottom: -19rem;
+
 }
 
-.closet-img {
-
+.mirror {
     display: block;
     /* Make the image a block element */
     margin: 0 auto;
     /* Set left and right margins to auto to center horizontally */
     border-radius: 10px;
+    margin-top: -3rem;
 
+}
+
+/* mirror */
+
+/* closet */
+.userClosetInfo {
+    text-align: center;
+    margin: auto;
+    max-width: 239px;
+}
+
+.userClosetInfo {
+    background-color: #fcde7003;
+    padding: 20px;
+    margin: -285px auto;
+    width: 200px;
+    margin-left: 56rem;
+    
+
+        flex-direction: column;
+       
+}
+
+.closet-img {
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+    margin-top: 27rem;
 }
 
 .closet-amount {
     color: antiquewhite;
 }
-.mirror{
-    
+.closet-title{
+    color: antiquewhite;
+    font-size: larger;
 }
+
+/* closet */
+
+/* plant */
+.plant-img{
+    width: 20%;
+height: auto;
+margin-bottom: -8rem;
+margin-left: 42rem;
+
+}
+/* plant */

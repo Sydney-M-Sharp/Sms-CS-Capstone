@@ -1,21 +1,28 @@
-.link{
+.link {
     background-color: #fac70e;
 }
-.header-of-page {
-   
-}
+
+.header-of-page {}
 
 form.auth-form {
-    max-width: 300px; /* Set the maximum width of the form */
-    margin: 0 auto; /* Center the form horizontally */
-    padding: 20px; /* Add padding to create space around the form */
-    border: 1px solid #ccc; /* Add border around the form */
-    border-radius: 10px; /* Add rounded corners to the form */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add shadow to the form */
+    max-width: 300px;
+    /* Set the maximum width of the form */
+    margin: 0 auto;
+    /* Center the form horizontally */
+    padding: 20px;
+    /* Add padding to create space around the form */
+    border: 1px solid #ccc;
+    /* Add border around the form */
+    border-radius: 10px;
+    /* Add rounded corners to the form */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* Add shadow to the form */
+    background-color: #fff;
 }
 
 .form-group {
-    margin-bottom: 20px; /* Add margin between form elements */
+    margin-bottom: 20px;
+    /* Add margin between form elements */
 }
 
 .form-control {
@@ -38,16 +45,21 @@ form.auth-form {
     box-shadow: 5px 5px 5px rgb(0 0 0 / 37%);
 }
 
+
 .link {
-    display: block; /* Make the link a block element */
-    text-align: center; /* Center align the link text */
-    margin-top: 20px; /* Add margin on top of the link */
-    width: 188px;
+    display: block;
+    /* Make the link a block element */
+    text-align: center;
+    /* Center align the link text */
+    margin-top: 20px;
+    /* Add margin on top of the link */
+    width: 212px;
     height: fit-content;
     box-shadow: 5px 5px 5px rgb(0 0 0 / 19%);
+
 }
 
-.bottom-half{
+.bottom-half {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -55,12 +67,26 @@ form.auth-form {
     transform: rotate(10deg);
 
 }
-.hanger{
+
+.hanger {
     max-height: 356px;
     margin-top: -7.8rem;
     margin-bottom: -8.6rem;
 }
 
-.full-page{
+.full-page {
     margin-top: 60px;
+}
+
+.hanger {
+    max-height: 356px;
+    margin-top: -7.8rem;
+    margin-bottom: -8.6rem;
+}
+
+.bottom-half {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
 }

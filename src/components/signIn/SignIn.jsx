@@ -6,7 +6,7 @@ import { getUserByEmail } from "../../services/userService.js"
 import "./signIn.css"
 
 
-export const SignIn = ({setCurrentUser}) => {
+export const SignIn = ({ setCurrentUser }) => {
     const [email, setEmail] = useState("")
     const navigate = useNavigate()
 
@@ -36,12 +36,12 @@ export const SignIn = ({setCurrentUser}) => {
         <section className="header-of-page">
             <h1>Sign In</h1>
         </section>
-        
+
         <section className="full-page">
             <form className="form-login"
-            onSubmit={handleLogin}
+                onSubmit={handleLogin}
             >
-                <fieldset>  
+                <fieldset>
                     <div className="form-group">
                         <input
                             type="email"
@@ -63,13 +63,12 @@ export const SignIn = ({setCurrentUser}) => {
                         </button>
                     </div>
                 </fieldset>
-                
             </form>
             <div className="bottom-half">
 
- <img className="hanger" src="src/components/logos/hanger.png" alt="src/components/logos/hanger.png" />
-            <Link className="link" to="/sign-up">Not a member yet? Click here!</Link>
-            
+                <img className="hanger" src="src/components/logos/hanger.png" alt="src/components/logos/hanger.png" />
+                <Link className="link" to="/sign-up">Not a member yet? Click here!</Link>
+
             </div>
         </section>
 

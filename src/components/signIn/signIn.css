@@ -3,8 +3,13 @@
 }
 .header-of-page {
     text-align: center; /* Center align the content */
+    
 }
+:root{
+    background-image: url('src/components/logos/8.png');
+    min-width: 1342px;
 
+}
 
 form.form-login {
     max-width: 300px; /* Set the maximum width of the form */
@@ -13,6 +18,7 @@ form.form-login {
     border: 1px solid #ccc; /* Add border around the form */
     border-radius: 10px; /* Add rounded corners to the form */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add shadow to the form */
+    background-color: #fff;
 }
 
 .form-group {
@@ -62,4 +68,5 @@ form.form-login {
 
 .full-page{
     margin-top: 60px;
+   ;
 }

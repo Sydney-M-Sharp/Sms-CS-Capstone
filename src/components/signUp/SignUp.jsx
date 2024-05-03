@@ -1,6 +1,7 @@
 import { useState } from "react"
 import { useNavigate } from "react-router-dom"
 import { createUser, getUserByEmail } from "../../services/userService"
+import { Link } from "react-router-dom"
 import "./signUp.css"
 
 
@@ -84,6 +85,11 @@ export const SignUp = ({ setCurrentUser }) => {
                 </fieldset>
 
             </form>
-        </section>
+       
+            <div className="bottom-half">
+        <img className="hanger" src="src/components/logos/hanger.png" alt="src/components/logos/hanger.png" />
+            <Link className="link" to="/sign-in">Already have an account? Click Here to Sign in!</Link>
+            </div>
+            </section>
     </>)
 }

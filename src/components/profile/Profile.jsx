@@ -21,8 +21,10 @@ export const MyProfile = ({ currentUser }) => {
     return (<>
         <section className="header-of-page">
             <h1>My Profile</h1>
+            <img className="plant-img" src="src/components/logos/hangingPlant.png" alt="src/components/logos/hangingPlant.png" />
         </section>
-        <img className="mirror" src="src/components/logos/profileMirror.png" alt="src/components/logos/profileMirror.png" />
+        
+        <img className="mirror" src="src/components/logos/hanging-mirror.png" alt="src/components/logos/hanging-mirror.png" />
         <div className="userInfo">
             
             <div className="userName">
@@ -38,9 +40,9 @@ export const MyProfile = ({ currentUser }) => {
         </div>
         <img className="closet-img" src="src/components/logos/closetImg.png" alt="src/components/logos/closetImg.png" />
         <div className="userClosetInfo">
-            <h3 className="closet-amount">Outfits In My Closet</h3>
-            <p className="closet-amount" >{userPosts.length}</p>
-        </div>
+        <div className="closet-title">Outfits In My Closet</div>
+            <div className="closet-amount" >{userPosts.length}</div></div>
+        
         
 
 

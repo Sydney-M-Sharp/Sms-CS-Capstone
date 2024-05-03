@@ -31,7 +31,7 @@
 }
 
 .post-photo img {
-    width: calc(33.33% - 20px);
+    width: calc(33.33% - 200px);
     margin-bottom: 20px;
     box-sizing: border-box;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);

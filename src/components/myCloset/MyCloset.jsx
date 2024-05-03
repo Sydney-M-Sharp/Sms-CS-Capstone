@@ -26,9 +26,10 @@ export const MyCloset = ({ currentUser }) => {
 
     return (
         <>
+        <section className="header-of-page">
             <section className="header-of-page">
                 <h1>My Closet</h1>
-
+                </section>
 {userPosts.length ? 
                 <div className="post-photo">
                     {userPosts.map((item) => {
@@ -42,13 +43,13 @@ export const MyCloset = ({ currentUser }) => {
 :
 <section className="Upload-photo">
     
-<div>Oops looks like your closet is empty! Let's have you upload a photo and get started!</div>
+<div>Oops looks like your closet is empty.  Let's have you upload a photo and get started!</div>
 <button onClick={()=>navigate("/upload")}> Upload </button>
 
 </section>
 }
+            
             </section>
-
         </>
     )
 }
