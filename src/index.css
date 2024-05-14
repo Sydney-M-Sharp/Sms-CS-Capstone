@@ -68,6 +68,8 @@ body{
     cursor: pointer;
     transition: border-color 0.25s;
     box-shadow: 5px 5px 5px hwb(33 42% 2% / 0.624);
+    color: rgb(255, 255, 255);
+    font-size: large;
   }
 
   button:hover {
