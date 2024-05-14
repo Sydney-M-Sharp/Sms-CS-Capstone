@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { getPostByUserId } from "../../services/myClosetService.jsx";
 import { getUserById } from "../../services/UserService.jsx";
-
+import "./profile.css"
 
 export const MyProfile = ({ currentUser }) => {
     const [userPosts, setUserPosts] = useState([])
@@ -21,43 +21,30 @@ export const MyProfile = ({ currentUser }) => {
     return (<>
         <section className="header-of-page">
             <h1>My Profile</h1>
+            <img className="plant-img" src="src/components/logos/hangingPlant.png" alt="src/components/logos/hangingPlant.png" />
         </section>
-
+        
+        <img className="mirror" src="src/components/logos/hanging-mirror.png" alt="src/components/logos/hanging-mirror.png" />
         <div className="userInfo">
-            <h3>Profile Info</h3>
+            
             <div className="userName">
-                <div>Name: </div>
+                <div className="title">Name: </div>
                 <ul>{userObject.name}</ul>
             </div>
 
             <div className="userEmail">
-                <div>Email: </div>
+                <div className="title">Email: </div>
                 <ul>{userObject.email}</ul>
             </div>
 
         </div>
-
+        <img className="closet-img" src="src/components/logos/closetImg.png" alt="src/components/logos/closetImg.png" />
         <div className="userClosetInfo">
-            <h3>Outfits In My Closet</h3>
-            <p>{userPosts.length}</p>
-        </div>
+        <div className="closet-title">Outfits In My Closet</div>
+            <div className="closet-amount" >{userPosts.length}</div></div>
+        
+        
 
-
-
-        {/* <div className="mostAndLeast">
-                <ul>Most Worn Item </ul>
-            </div>
-
-            <div className="mostAndLeast"></div>
-            <ul>Least Worn Item </ul>
-
-            <div className="mostAndLeast">
-            <ul>Most Worn Accessory </ul>
-            </div>
-
-            <div className="mostAndLeast">
-            <ul>Most Worn Accessory </ul>
-            </div> */}
 
     </>
     )
