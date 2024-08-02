@@ -16,7 +16,9 @@ const moveToSignUp =() =>{
 
         <section className="top-of-page">
         <div className="left">
+
             <h1>Welcome to Dream Closet!!</h1>
+
             <h3 className="love-dressing-up"> Enjoy dressing up but you can't for the life of you remember that last outfit you loved?
                 Don't worry! Dream Closet has your back.
             </h3>
