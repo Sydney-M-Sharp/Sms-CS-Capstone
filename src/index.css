@@ -1,37 +1,56 @@
-/* :root {
+:root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  /* color-scheme: light dark; */
+  color: rgba(0, 0, 0, 0.87);
+  background-color: #ffffff;
+  
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-} */
 
-/* a {
-  font-weight: 500;
-  color: #646cff;
+  
+}
+input[type="text"],
+input[type="email"],
+input[type="password"] 
+input[type="url"] {
+    /* Specify the desired styles for your input boxes */
+    background-color: white; /* Change background color to white */
+    color: black; /* Change text color to black */
+    /* Add any other styles as needed */
+}
+
+a {
+  font-weight: 800;
+  color: #ffffff;
   text-decoration: inherit;
-} */
+}
 
-/* a:hover {
-  color: #535bf2;
-}  */
+a:hover {
+  color: #f89a9a; 
+} 
+/* @todo change color */
 
-/* body {
-  margin-bottom: 3rem;
-  margin-left: 3rem;
-  margin-right: 3rem;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+/* :root {
+  min-height: auto;
+  min-width: 1265px;
+  background-image: url('src/components/logos/background.jpg');
+  background-color: rgba(255, 255, 255, 0.5); 
+  background-size: cover;
+  background-repeat: repeat;
+  background-position: center center;
+  height: 300px;
+  
 } */
+body{
+  height: 97vh;
+
+}
 
   h1 {
     font-size: 3.2em;
@@ -48,6 +67,9 @@
     background-color: #fac70e;
     cursor: pointer;
     transition: border-color 0.25s;
+    box-shadow: 5px 5px 5px hwb(33 42% 2% / 0.624);
+    color: rgb(255, 255, 255);
+    font-size: large;
   }
 
   button:hover {

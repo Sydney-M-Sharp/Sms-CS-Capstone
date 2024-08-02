@@ -31,7 +31,7 @@ export const NavBar = ({setCurrentUser}) => {
                         onClick={() => {
                             localStorage.removeItem("user")
                             navigate("/login", { replace: true })
-                            setCurrentUser({})
+                            setCurrentUser(null)
                         }}// 28-39 if there is an item in local storage do these lines
                     >
                         Logout

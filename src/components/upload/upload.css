@@ -1,0 +1,38 @@
+.header-of-page {
+    display: flex;
+    flex-wrap: wrap;
+}
+.button-photo{
+   margin-top: 5rem;
+}
+.middle{
+    font-size: large;
+    
+}
+.form-group {
+    margin-bottom: 20px; /* Add margin between form elements */
+}
+
+.middle {
+    width: 40%;
+    margin-top: 1rem;
+    padding: 10px;
+   
+    border-radius: 5px;
+}
+.button-Submit{
+    border-radius: 8px;
+    border: 1px solid transparent;
+    padding: 0.6em 1.2em;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+   color: rgb(255, 255, 255);
+    cursor: pointer;
+    transition: border-color 0.25s;
+    box-shadow: 5px 5px 5px hwb(36 34% 64% / 0.552);
+    background-color: #AACEA1;
+}
+.dropDown{
+    font-size: medium;
+}

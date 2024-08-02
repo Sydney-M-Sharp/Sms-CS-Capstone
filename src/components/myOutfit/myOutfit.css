@@ -3,12 +3,12 @@
     flex-wrap: wrap;
 }
 
-/* .post-photo {
+.photo-Section {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-} */
-
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+    margin-top: 20px; /* Add some top margin for spacing */
+}
 .post-photo2 img {
     width: calc(33.33% - 20px);
     /* Adjust width based on the number of photos per row */
@@ -36,4 +36,7 @@
 
 .bottom-buttons button {
     margin: 0 10px; /* Add some horizontal margin between the buttons */
+}
+.delete-button{
+    background-color: #f89a9a;
 }

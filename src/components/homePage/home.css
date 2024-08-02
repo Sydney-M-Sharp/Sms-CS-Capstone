@@ -1,8 +1,17 @@
+
+
+
 .top-of-page {
     display: flex;
-    
+    min-height: auto;
+    min-width: 1265px;
+    margin-bottom: -1rem;
+    margin-top: -1rem;
 }
 
+.love-dressing-up{
+    margin-top: 5rem
+}
 .middle-of-page {
     display: flex;
     justify-content: space-evenly;
@@ -10,21 +19,60 @@
 
 .bottom-of-page {
     display: flex;
+    flex-direction: column;
+    margin-left: 3rem;
 
 }
 
 .left {
     width: 50%;
-    margin-left: 4rem;
+    margin: 4rem;
 
 }
 
 .right {
     width: 50%;
     margin: 4rem;
+    margin-right:4rem;
+    margin-left: 6rem;
+   
+}
+.right-mid {
+    width: 50%;
+    margin: 4rem;
+    margin-left:10rem;
+    padding-left: 4rem;
+   
 }
 .mainLogo{
-    height: 337px; 
-    width: 354px;
+    /* height: 337px; 
+    width: 354px; */
+    height: auto; 
+    width: 55%;
+    margin-left: 5rem;
+    box-shadow: 10px 10px 5px #faba6c9f;
+    
    
     }
+    .circular-image1 {
+        height: 300px; 
+        width: 305px;
+        box-shadow: 10px 10px 5px #faba6c9f;
+        border-radius: 50%; /* Crop the image to be a circle */
+    object-fit: cover; /* Ensure the image covers the entire circle */
+       
+        }
+        .circular-image2 {
+            height: 300px; 
+            width: 305px;
+            box-shadow: 10px 10px 5px #faba6c9f;
+            border-radius: 50%; /* Crop the image to be a circle */
+        object-fit: cover; /* Ensure the image covers the entire circle */
+        margin-left: 1rem;
+
+           
+            }
+            .signIn-button{
+                margin-top: 0.3rem;
+                margin-bottom: 2rem;
+            }

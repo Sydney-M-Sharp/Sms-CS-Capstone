@@ -1,8 +1,6 @@
 import "./addClothingType.css"
 import { useEffect, useState } from "react"
 import { getAllTypes } from "../../services/TypesServices.jsx"
-import Form from 'react-bootstrap/Form';
-import InputGroup from 'react-bootstrap/InputGroup';
 
 
 export const AddClothingType = () => {

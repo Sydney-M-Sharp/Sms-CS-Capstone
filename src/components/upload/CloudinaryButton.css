@@ -1,0 +1,12 @@
+#upload_widget.cloudinary-button{
+    width: 30%;
+    padding: 10px;
+    background-color: #fac70e;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 1rem;
+    box-shadow: 5px 5px 5px rgb(0 0 0 / 37%);
+    font-size: large;
+}
