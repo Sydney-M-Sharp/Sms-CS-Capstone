@@ -37,7 +37,7 @@ export const App = () => {
       <Route path="sign-in" element={<SignIn setCurrentUser={setCurrentUser}/>} />
       <Route path="sign-up" element={<SignUp setCurrentUser={setCurrentUser}/>} />
       <Route path="edit-outfit" element={  <EditOutfit currentUser={currentUser}/>} />
-      < Route path="/" element={<Home currentUser={currentUser}/>} />
+      < Route path="Sms-CS-Capstone" element={<Home currentUser={currentUser}/>} />
 
     </Routes>
   </>
